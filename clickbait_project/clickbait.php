@@ -5,6 +5,39 @@
         //grab value from textarea in $_POST collection
         //make all letters lowercase using strtolower() function
         //store in a variable
+        $clickbait = strtolower($_POST["clickbait_headline"]);
+
+        //store array of clickbait-sounding words
+        $a = array(
+            "scientiests",
+            "doctors",
+            "hate",
+            "stupid",
+            "weird",
+            "simple",
+            "trick",
+            "shocked me",
+            "you'll never believe",
+            "hack",
+            "epic",
+            "unbelievable"
+        );
+
+        //store array of replacements in respective order
+        $b = array(
+            "so-called scientists",
+            "quacks",
+            "aren't threatened by",
+            "average",
+            "completely normal",
+            "ineffective",
+            "method",
+            "is no different than the others",
+            "you won't really be surprised by",
+            "slightly improve",
+            "boring",
+            "normal"
+        );
     }
 ?>
 
