@@ -17,12 +17,14 @@
       <h1><?php echo TITLE; ?></h1>
 
       <?php
+      //PLAIN VARIABLES
         $username = "johndoe";
         $fullName = "John Doe";
         $age = 32;
         $gender = "male";
         $country = "Mexico";
 
+      //SIMPLE ARRAY
         $user   = array(
                   "johndoe",    //0
                   "John Doe",   //1
@@ -31,11 +33,22 @@
                   "Mexico"      //4
         );
 
+      //ECHO VALUES OF ARRAYS
         echo $user[0] ."<br>";
         echo $user[1] ."<br>";
         echo $user[2] ."<br>";
         echo $user[3] ."<br>";
         echo $user[4] ."<br>";
+
+      //ASSOCIATIVE ARRAYS
+        $people = array(
+                    "username" => "johndoe",
+                    "fullName" => "John Doe",
+                    "age"      => 32,
+                    "gender"   => "male",
+                    "country"  => "Mexico"
+        );
+
       ?>
       
     </div>
