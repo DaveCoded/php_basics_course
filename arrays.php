@@ -41,14 +41,55 @@
         echo $user[4] ."<br>";
 
       //ASSOCIATIVE ARRAYS
-        $people = array(
-                    "username" => "johndoe",
-                    "fullName" => "John Doe",
-                    "age"      => 32,
-                    "gender"   => "male",
-                    "country"  => "Mexico"
-        );
+        $people = 
+          array(
+            "username" => "johndoe",
+            "fullName" => "John Doe",
+            "age"      => 32,
+            "gender"   => "male",
+            "country"  => "Mexico"
+          );
 
+      //ECHO VALUES OF THE ARRAY
+        echo $people["username"] ."<br>";
+        echo $people["fullName"] ."<br>";
+        echo $people["age"] ."<br>";
+        echo $people["gender"] ."<br>";
+        echo $people["country"] ."<br>";
+
+      //MULTI-DIMENSIONAL ARRAY
+        $employees = 
+          array(
+            array(
+              "username" => "johndoe",
+              "fullName" => "John Doe",
+              "age"      => 32,
+              "gender"   => "male",
+              "country"  => "Mexico"
+            ),
+            array(
+              "username" => "janedoe",
+              "fullName" => "Jane Doe",
+              "age"      => 27,
+              "gender"   => "female",
+              "country"  => "Canada"
+            )
+          );
+        
+          echo "<hr><br>";
+
+        //ECHO VALUES OF MULTI-DIMENSIONAL ARRAY
+          echo $employees[0]["username"] ."<br>";
+          echo $employees[0]["fullName"] ."<br>";
+          echo $employees[0]["age"] ."<br>";
+          echo $employees[0]["gender"] ."<br>";
+          echo $employees[0]["country"] ."<br>";
+
+          echo $employees[1]["username"] ."<br>";
+          echo $employees[1]["fullName"] ."<br>";
+          echo $employees[1]["age"] ."<br>";
+          echo $employees[1]["gender"] ."<br>";
+          echo $employees[1]["country"] ."<br>";
       ?>
       
     </div>
