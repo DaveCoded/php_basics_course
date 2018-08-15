@@ -38,6 +38,11 @@
             "boring",
             "normal"
         );
+
+        //use the str_replace() function to replace the words
+        //uppercase first letter using ucwords() function
+        //store in a variable
+        $honestHeadline = str_replace( $a, $b, $clickbait ); //arguments for str_replace( what to replace, what to replace it with, where to replace them )
     }
 ?>
 
@@ -71,6 +76,12 @@
                     <button type="submit" class="btn btn-primary btn-lg float-right" name="fix_submit">Make honest!</button>
                 </form>
             </div>
+
+            <?php
+                if ( isset( $_POST[ "fix_submit" ] ) ) {
+                    echo $honestHeadline;
+                }
+            ?>
 
         </div>
         
