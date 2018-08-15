@@ -13,6 +13,25 @@
 
     <?php echo("Hello World!"); ?>
 
+    <!-- This is an HTML comment -->
+
+    <?php    
+      // single line php comment
+      # also single line php comment
+      
+      /*
+        multi-line php comment;
+        yup, just like CSS
+      */
+    ?>
+
+    <!-- php's default keywords are NOT case sensetive!! -->
+    <?php
+      print('hello world!<br>');
+      Print('hello world!<br>');
+      PRINT('hello world!<br>');
+    ?>
+
     <script src="" async defer></script>
   </body>
 </html>
