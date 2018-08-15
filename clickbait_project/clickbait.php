@@ -1,5 +1,11 @@
 <?php 
     define( "TITLE", "Honest Clickbait Headlines" );
+
+    if( isset ( $_POST["fix_submit"] ) ) {
+        //grab value from textarea in $_POST collection
+        //make all letters lowercase using strtolower() function
+        //store in a variable
+    }
 ?>
 
 <!DOCTYPE html>
@@ -22,16 +28,17 @@
         <![endif]-->
 
         <div class="container">
+
             <h1><?php echo TITLE; ?></h1>
             <p class="lead">Hate clickbait? Turn those annoying headlines into realistic 
             and honest ones using this simple program.</p>
-
             <div class="row">
                 <form class="col-sm-8 col-sm-offset-2" action="" method="post">
-                    <textarea placeholder="Paste headline here" class="form-control input-lg" name="clickbait_headline"></textarea>
-                    <button type="submit" class="btn btn-primary btn-lg pull-right" name="fix_submit">Make honest!</button>
+                    <textarea placeholder="Paste headline here" class="form-control input-lg" name="clickbait_headline"></textarea><br>
+                    <button type="submit" class="btn btn-primary btn-lg float-right" name="fix_submit">Make honest!</button>
                 </form>
             </div>
+
         </div>
         
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
