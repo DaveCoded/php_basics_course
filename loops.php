@@ -25,7 +25,19 @@
       <h1><?php echo TITLE; ?></h1>
 
       <?php
+        $startingNumber = 50;
 
+        //WHILE LOOP
+        while ( $startingNumber <= 100 ) {
+          echo "$startingNumber &nbsp;";
+
+          $startingNumber++;
+        }
+
+        //FOR LOOP
+        for ( $i = 30; $i <= 40; $i++ ) {
+          echo "Number $i <br>";
+        }
       ?>
 
     </div>
