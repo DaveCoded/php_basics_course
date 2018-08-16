@@ -24,11 +24,11 @@
     <div class="container">
       <h1><?php echo TITLE; ?></h1>
 
-      <?php
-        
-        
-
-      ?>
+      <form action="form_get.php" method="get">
+        <input type="text" placeholder="Name" name ="name">
+        <input type="text" placeholder="Email" name ="email">
+        <input type="submit" name ="form_submit">
+      </form>
 
     </div>
     
