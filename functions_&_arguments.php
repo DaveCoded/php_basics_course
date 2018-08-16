@@ -36,6 +36,15 @@
 
         myFirstFunction();
 
+        function mySecondFunction( $a ) {
+          do {
+            echo "$a &nbsp;";
+            $a++;
+          } while ( $a <= 10 );
+        }
+
+        mySecondFunction( 4 );
+
       ?>
 
     </div>
