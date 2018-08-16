@@ -38,6 +38,16 @@
         for ( $i = 30; $i <= 40; $i++ ) {
           echo "Number $i <br>";
         }
+
+        //FOREACH LOOP
+        $friends = array( "Ashleigh", "Chelsea", "Cam", "Pippa", "Sophie", "Cosmo" );
+
+        foreach ( $friends as $friend ) {
+
+        //output each individual value from array
+          echo "$friend is my friend!<br>";
+
+        }
       ?>
 
     </div>
