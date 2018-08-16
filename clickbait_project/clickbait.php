@@ -79,7 +79,11 @@
 
             <?php
                 if ( isset( $_POST[ "fix_submit" ] ) ) {
-                    echo $honestHeadline;
+                    //echo original headline on screen
+                    echo "<strong class='text-danger'>Original Heading</strong><h4>".ucwords($clickbait)."</h4><hr>";
+                    //echo new, honest headline
+                    echo "<strong class='text-danger'>Original Heading</strong><h4>".ucwords($honestHeadline)."</h4>";
+
                 }
             ?>
 
