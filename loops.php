@@ -48,6 +48,15 @@
           echo "$friend is my friend!<br>";
 
         }
+
+        //DO WHILE LOOP
+        $foo = 10;
+
+        do {
+          echo "Numero $foo &nbsp;";
+          $foo++;
+
+        } while ( $foo <= 50 );
       ?>
 
     </div>
