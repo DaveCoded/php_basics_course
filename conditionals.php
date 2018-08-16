@@ -31,7 +31,25 @@
         if ( $foo > $bar ) {
           //PHP variables in double quotes display the value of that variable!
           //Single quote strings give the original variable name
-          echo "$foo is greater than $bar";
+          echo "$foo is greater than $bar<br>";
+        }
+
+        $currentlyListeningTo = "Opeth";
+
+        if ( $currentlyListeningTo == "The Slackers" ) {
+          echo "You are listening to $currentlyListeningTo<br>";
+        } else {
+          echo "Taking a wild guess here, you're listening to $currentlyListeningTo<br>";
+        }
+
+        $favouriteLanguage = "JavaScript";
+
+        if ( $favouriteLanguage == "PHP" ) {
+          echo "Hey man, I love $favouriteLanguage too!";
+        } elseif ( $favouriteLanguage == "JavaScript" ) {
+          echo "Yeah, but you only like $favouriteLanguage coz it's poplar, innit?";
+        } else {
+          echo "Pff, $favouriteLanguage sucks, bro";
         }
       ?>
 
