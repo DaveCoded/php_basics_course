@@ -20,6 +20,22 @@
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
+
+    <div class="container">
+      <h1><?php echo TITLE; ?></h1>
+
+      <?php
+        $foo = 99;
+        $bar = 79;
+
+        if ( $foo > $bar ) {
+          //PHP variables in double quotes display the value of that variable!
+          //Single quote strings give the original variable name
+          echo "$foo is greater than $bar";
+        }
+      ?>
+
+    </div>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
