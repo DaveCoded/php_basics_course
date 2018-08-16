@@ -45,6 +45,13 @@
 
         mySecondFunction( 4 );
 
+        function addTogether( $num1, $num2 ) {
+          $newNum = $num1 + $num2;
+          echo "$num1 + $num2 = $newNum";
+        }
+
+        addTogether( 34, 28 );
+
       ?>
 
     </div>
